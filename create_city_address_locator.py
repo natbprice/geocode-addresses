@@ -1,7 +1,7 @@
 # Create address locators for cities in each state. Create composite address locator for all states.
 #
 # Author: Nathaniel Price
-# Date: June 16th, 2017
+# Date: May 22, 2018
 
 # Setup ---------------------------------------------------------------------------------------------------------------
 # Import system modules
@@ -12,7 +12,7 @@ import arcpy
 from arcpy import env
 
 # Set working directory
-os.chdir('E://QGIS//cb_2016_place_500k//')
+os.chdir('E://QGIS//tl_2018_place//')
 
 # Overwrite existing files
 arcpy.env.overwriteOutput = True
@@ -25,7 +25,7 @@ arcpy.CreateFileGDB_management("E://QGIS//geocoding", "geocoding.gdb")
 
 # Create a city address locator for each state ------------------------------------------------------------------------
 # Get list of shapefiles
-fileList = glob.glob('cb_2016*.shp')
+fileList = glob.glob('tl_2018*.shp')
 
 # # Create table from state FIPS excel file
 # env.workspace = r'E:/QGIS/geocoding/geocoding.gdb'

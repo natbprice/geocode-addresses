@@ -1,7 +1,7 @@
-# Add fields for FIPS county and state codes to each shapefile
+# Add fields for FIPS county and state codes to each address feature shapefile
 #
 # Author: Nathaniel Price
-# Date: June 14, 2017
+# Date: May 22, 2018
 
 # Import modules
 import arcpy
@@ -14,7 +14,7 @@ os.chdir("E:\\QGIS\\tl_2016_addrfeat\\")
 # Get list of shapefiles
 fileList = glob.glob("*.shp")
 
-# Loop over shapefiles
+# Loop over address feature shapefiles
 for i in range(0, len(fileList)):
 
     # Current shape file
